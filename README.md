@@ -5,7 +5,7 @@ A STEP-BY-STEP TUTORIAL:
 ![](./images/title-graphic1.jpeg) 
 
 
-TODO:  This article is still a work-in-progress.
+TODO:  This article is still a work-in-progress...
 
 - add Let's Encrypt using dokku-letsencrypt HTTPS
 - add SWAP file on server with less than 1GIG RAM
