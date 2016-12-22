@@ -103,7 +103,35 @@ Next, we want to create a new DNS ZONE for our domain name.
 <br>
 <br>
 ##STEP #5
-<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+<h3>CONFIGURE THE DNS ZONE</h3>
+You should now be on the DETAILS page of your new DNS ZONE.
+Let's add some DNS Records to our new DNS ZONE.
+
+- Click on the link-button:  **+ ADD RECORD **
+
+<h5>First entry:</h5>
+    TYPE: A
+    SUB-DOMAIN: YOURDOMAIN.COM (NO WWW. OR DOT BEFORE NAME)
+    DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
+	
+- Click on the link-button:  **+ ADD RECORD** 
+
+<h5>Second entry:</h5>
+    TYPE: A
+    SUB-DOMAIN: WWW.YOURDOMAIN.COM (NO WWW OR DOT BEFORE NAME)
+    DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
+
+- Click on the link-button:  **+ ADD RECORD **
+
+<h5>Third entry:</h5>
+    TYPE: A
+    SUB-DOMAIN: NAME-OF-YOUR-DOKKU-APP.YOURDOMAIN.COM (NO WWW. OR DOT BEFORE NAME)
+    DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
+<br>
+
+
+- Click SAVE to lock in your new settings.
+
 
 
 <br>
@@ -140,30 +168,6 @@ Next, we want to create a new DNS ZONE for our domain name.
 <br>
 ##STEP #11
 <h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
-
-
-
-
-
-
-
-
-
-
-
-
---------------------------------------------------------------------
-PART #3 - ADD A NEW DNS ZONE
-
-Next, we want to create a new DNS ZONE for our domain name.
---------------------------------------------------------------------
-
-xx. Click the CREATE OTHER RESOURCES button/menu again, choose DNS ZONE.
-
-xx. Create DNS Zone. Enter your domain name in the box under ENTER THE DOMAIN NAME YOU HAVE REGISTERED. You do not need the "WWW." before your domain name. For example: mydomainname.com.
-
-xx. Scroll down and click the CREATE DNS ZONE button.
-
 
 
 
