@@ -29,9 +29,9 @@ TODOS:  This article is still a work-in-progress...
 <br>
 <br>
 ##PREREQUISITES:
-- You will need your own registered domain name (i.e. mydomain.com) and will need administrative access to modify the DNS settings for it on your registrar's website.
+1. You will need your own registered domain name (i.e. mydomain.com) and will need administrative access to modify the DNS settings for it on your registrar's website.
 
-- You will need to sign-up for an AWS account and be able to  login to LightSail (www.amazonlightsail.com).
+2. You will need to sign-up for an AWS account and be able to  login to LightSail (www.amazonlightsail.com).
 
 <br>
 <br>
@@ -104,34 +104,49 @@ Next, we want to create a new DNS ZONE for our domain name.
 <br>
 ##STEP #5
 <h3>CONFIGURE THE DNS ZONE</h3>
-You should now be on the DETAILS page of your new DNS ZONE.
-Let's add some DNS Records to our new DNS ZONE.
+You should now be on the DETAILS page of your new DNS ZONE. Let's add some DNS Records to our new DNS ZONE.
 
-<br>- Click on the link-button:  ** + ADD RECORD **
+** First DNS Entry: **
 
-<h5>First Entry:</h5>
-    TYPE: A
-    SUB-DOMAIN: YOURDOMAIN.COM (NO WWW. OR DOT BEFORE NAME)
-    DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
+- Click on the link-button:  ** + ADD RECORD **
 
-<br>- Click on the link-button:  ** + ADD RECORD **
-
-<h5>Second Entry:</h5>
-    TYPE: A
-    SUB-DOMAIN: WWW.YOURDOMAIN.COM (NO WWW OR DOT BEFORE NAME)
-    DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
-
-<br>- Click on the link-button:  ** + ADD RECORD **
-
-<h5>Third Entry:</h5>
-    TYPE: A
-    SUB-DOMAIN: NAME-OF-YOUR-DOKKU-APP.YOURDOMAIN.COM (NO WWW. OR DOT BEFORE NAME)
-    DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
-
-<br>- Click ** SAVE ** to lock in your new settings.
+~~~
+TYPE: A
+SUB-DOMAIN: YOURDOMAIN.COM (NO WWW. OR DOT BEFORE NAME)
+DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
+~~~
+    
+- Click ** SAVE ** to lock in your new settings.
 
 <br>
-For each additional Dokku app that you add to this server, you will want to return to this DNS ZONE to create a new A-RECORD for that sub-domain.
+** Second DNS Entry: **
+
+- Click on the link-button:  ** + ADD RECORD **
+
+~~~
+TYPE: A
+SUB-DOMAIN: WWW.YOURDOMAIN.COM (NO WWW OR DOT BEFORE NAME)
+DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
+~~~
+    
+- Click ** SAVE ** to lock in your new settings.
+
+<br>
+** Third DNS Entry: **
+
+- Click on the link-button:  ** + ADD RECORD **
+
+~~~
+TYPE: A
+SUB-DOMAIN: NAME-OF-YOUR-DOKKU-APP.YOURDOMAIN.COM (NO WWW. OR DOT BEFORE NAME)
+DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
+~~~
+
+- Click ** SAVE ** to lock in your new settings.
+
+<br>
+** Adding additional DNS entries for each new Dokku app: **
+For each additional Dokku app that you add to your server, you will want to create a new A-RECORD for each new sub-domain.
 
 For example, if you want to create a new Dokku app called 'SUPERDOOPER', you will need to create the following DNS entry:
 
@@ -139,7 +154,7 @@ For example, if you want to create a new Dokku app called 'SUPERDOOPER', you wil
     SUB-DOMAIN: SUPERDOOPER.YOURDOMAIN.COM
     DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
 
-- Click ** SAVE ** to lock in your new settings.
+
 
 
 <br>
