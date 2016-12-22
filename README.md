@@ -16,9 +16,9 @@ TODOS:  This article is still a work-in-progress...
   * [**PREREQUISITES:** What you need before you start](#prerequisites)
   * [**STEP #1:** Create a new AWS Ubuntu server instance](#step-1)
   * [**STEP #2:** Connect to your new server and apply updates](#step-2)
-  * [**STEP #3:** xxxxxxxxxxxxxxxxxx](#step-3)
-  * [**STEP #4:** xxxxxxxxxxxxxxxxxx](#step-4)
-  * [**STEP #5:** xxxxxxxxxxxxxxxxxx](#step-5)
+  * [**STEP #3:** Create and assign a new static IP address](#step-3)
+  * [**STEP #4:** Add a new DNS Zone](#step-4)
+  * [**STEP #5:** Configure the DNS Zone](#step-5)
   * [**STEP #6:** xxxxxxxxxxxxxxxxxx](#step-6)
   * [**STEP #7:** xxxxxxxxxxxxxxxxxx](#step-7)
   * [**STEP #8:** xxxxxxxxxxxxxxxxxx](#step-8)
@@ -36,7 +36,7 @@ TODOS:  This article is still a work-in-progress...
 <br>
 <br>
 ##STEP #1
-<h3>Create a new AWS Ubuntu server instance</h3>
+<h3>CREATE A NEW AWS UBUNTU SERVER INSTANCE</h3>
 
 
 
@@ -176,43 +176,6 @@ For example, if you want to create a new Dokku app called 'SUPERDOOPER', you wil
 <br>
 ##STEP #11
 <h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
-
-
-
---------------------------------------------------------------------
-PART #4 - CONFIGURE THE DNS ZONE
-
-You should now be on the DETAILS page of your new DNS ZONE.
-Let's add some DNS Records to our new DNS ZONE.
---------------------------------------------------------------------
-
-xx. Click on the link-button: [ + ADD RECORD ]
-
-First entry:
-	TYPE: 				A
-	SUB-DOMAIN:			YOURDOMAIN.COM (NO WWW. OR DOT BEFORE NAME)
-	DESTINATION IP:		(CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
-
-Second entry:
-	TYPE: 				A
-	SUB-DOMAIN:			WWW.YOURDOMAIN.COM
-	DESTINATION IP:		(CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
-
-Third entry:
-	TYPE: 				A
-	SUB-DOMAIN:			NAME-OF-YOUR-DOKKU-APP.YOURDOMAIN.COM
-	DESTINATION IP:		(CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
-
-xx. Click SAVE to lock in your new settings.
-
-
-
-NOTE: You will need to create a seperate A-RECORD for each sub-domain that you wish to use with YOURDOMAIN.COM. For example, if you want to create a new Dokku app called 'SUPERDOOPER', you will need to create the following DNS entry:
-	TYPE: 				A
-	SUB-DOMAIN:			SUPERDOOPER.YOURDOMAIN.COM (NO WWW.)
-	DESTINATION IP:		(CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
-
-xx. Click SAVE to lock in your new settings.
 
 
 
