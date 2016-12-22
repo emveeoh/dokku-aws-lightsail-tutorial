@@ -28,9 +28,9 @@ TODO:  This article is still a work-in-progress...
 
 
 ##PREREQUISITES:
-- You will need a domain name (i.e. mydomain.com) and will need administrative access to it on your registrar's website.
+- You will need your own registered domain name (i.e. mydomain.com) and will need administrative access to modify the DNS settings for it on your registrar's website.
 
-- Sign-up for an AWS account and login to LightSail (www.amazonlightsail.com).
+- You will need to sign-up for an AWS account and be able to  login to LightSail (www.amazonlightsail.com).
 
 
 ##STEP #1
