@@ -2,7 +2,7 @@
 #SETUP DOKKU ON AN AMAZON AWS LIGHTSAIL INSTANCE
 
 
-
+![](./images/title-graphic1.jpeg) 
 
 
 TODO:  This article is still a work-in-progress...
@@ -13,7 +13,7 @@ TODO:  This article is still a work-in-progress...
 
 
 ##TABLE OF CONTENTS:
-  * [**STEP #1:** Create a new AWS instance.](#step-1)
+  * [**STEP #1:** Create a new AWS Ubuntu server instance](#step-1)
   * [**STEP #2:** xxxxxxxxxxxxxxxxxx](#step-2)
   * [**STEP #3:** xxxxxxxxxxxxxxxxxx](#step-3)
   * [**STEP #4:** xxxxxxxxxxxxxxxxxx](#step-4)
@@ -33,7 +33,7 @@ TODO:  This article is still a work-in-progress...
 
 
 ##STEP #1
-<h3>CREATE A NEW AWS UBUNTU SERVER INSTANCE</h3>
+<h3>Create a new AWS Ubuntu server instance</h3>
 
 
 
