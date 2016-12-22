@@ -1,39 +1,39 @@
-# SETUP DOKKU ON AN AWS LIGHTSAIL INSTANCE
+<h2>A STEP-BY-STEP TUTORIAL:</h2>
+#SETUP DOKKU ON AN AMAZON AWS LIGHTSAIL INSTANCE
 
 
 
-This article is still in-progress...
 
-TODO:
-------------------
+
+TODO:  This article is still a work-in-progress...
+
 - add Let's Encrypt using dokku-letsencrypt HTTPS
 - add SWAP file on server with less than 1GIG RAM
----
 
 
-#TABLE OF CONTENTS:
-  * [**STEP 1**: Create a new AWS instance.](#step-1)
-  * [**STEP 2**: xxxxxxxxxxxxxxxxxx](#step-2)
-  * [**STEP 3**: xxxxxxxxxxxxxxxxxx](#step-3)
-  * [**STEP 4**: xxxxxxxxxxxxxxxxxx](#step-4)
-  * [**STEP 5**: xxxxxxxxxxxxxxxxxx](#step-5)
-  * [**STEP 6**: xxxxxxxxxxxxxxxxxx](#step-6)
-  * [**STEP 7**: xxxxxxxxxxxxxxxxxx](#step-7)
-  * [**STEP 8**: xxxxxxxxxxxxxxxxxx](#step-8)
-  * [**STEP 9**: xxxxxxxxxxxxxxxxxx](#step-9)
-  * [**STEP 10**: xxxxxxxxxxxxxxxxxx](#step-10)
-  * [**STEP 11**: xxxxxxxxxxxxxxxxxx](#step-11)
 
----
-#PREREQUISITES:
+##TABLE OF CONTENTS:
+  * [**STEP #1:** Create a new AWS instance.](#step-1)
+  * [**STEP #2:** xxxxxxxxxxxxxxxxxx](#step-2)
+  * [**STEP #3:** xxxxxxxxxxxxxxxxxx](#step-3)
+  * [**STEP #4:** xxxxxxxxxxxxxxxxxx](#step-4)
+  * [**STEP #5:** xxxxxxxxxxxxxxxxxx](#step-5)
+  * [**STEP #6:** xxxxxxxxxxxxxxxxxx](#step-6)
+  * [**STEP #7:** xxxxxxxxxxxxxxxxxx](#step-7)
+  * [**STEP #8:** xxxxxxxxxxxxxxxxxx](#step-8)
+  * [**STEP #9:** xxxxxxxxxxxxxxxxxx](#step-9)
+  * [**STEP #10:** xxxxxxxxxxxxxxxxxx](#step-10)
+  * [**STEP #11:** xxxxxxxxxxxxxxxxxx](#step-11)
+
+
+##PREREQUISITES:
 - You will need a domain name (i.e. mydomain.com) and will need administrative access to it on your registrar's website.
 
 - Sign-up for an AWS account and login to LightSail (www.amazonlightsail.com).
 
----
 
-#STEP #1
-<h3>CREATE A NEW AWS INSTANCE</h3>
+##STEP #1
+<h3>CREATE A NEW AWS UBUNTU SERVER INSTANCE</h3>
 
 
 
@@ -52,7 +52,7 @@ In a few minutes, your new server instance will be ready.
 
 
 ---
-#STEP 2
+##STEP #2
 <h3>XXXXXXXXXXXXXXXXXXXXXXX</h3>
 
 PART #xxxxx - CONNECT TO YOUR SERVER AND UPDATE IT
