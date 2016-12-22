@@ -1,5 +1,5 @@
 <h2>A STEP-BY-STEP TUTORIAL:</h2>
-<h1>SETUP DOKKU ON AN AMAZON AWS LIGHTSAIL </h1>
+<h2>SETUP DOKKU ON AN AMAZON AWS LIGHTSAIL </h2>
 
 
 ![](./images/title-graphic1.jpeg) 
