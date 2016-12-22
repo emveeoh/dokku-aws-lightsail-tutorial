@@ -1,5 +1,5 @@
 A STEP-BY-STEP TUTORIAL:
-<h1>SETUP DOKKU ON AN AMAZON AWS LIGHTSAIL</h1>
+<h1>SETUP DOKKU ON AMAZON AWS LIGHTSAIL</h1>
 
 
 ![](./images/title-graphic1.jpeg) 
@@ -9,6 +9,7 @@ TODO:  This article is still a work-in-progress...
 
 - add Let's Encrypt using dokku-letsencrypt HTTPS
 - add SWAP file on server with less than 1GIG RAM
+- add domains to Dokku manually
 
 
 
@@ -125,6 +126,11 @@ First entry:
 Second entry:
 	TYPE: 				A
 	SUB-DOMAIN:			WWW.YOURDOMAIN.COM
+	DESTINATION IP:		(CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
+
+Third entry:
+	TYPE: 				A
+	SUB-DOMAIN:			NAME-OF-YOUR-DOKKU-APP.YOURDOMAIN.COM
 	DESTINATION IP:		(CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
 
 xx. Click SAVE to lock in your new settings.
