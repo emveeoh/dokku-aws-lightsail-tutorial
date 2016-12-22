@@ -107,31 +107,39 @@ Next, we want to create a new DNS ZONE for our domain name.
 You should now be on the DETAILS page of your new DNS ZONE.
 Let's add some DNS Records to our new DNS ZONE.
 
-- Click on the link-button:  **+ ADD RECORD **
+<br>- Click on the link-button:  ** + ADD RECORD **
 
-<h5>First entry:</h5>
+<h5>First Entry:</h5>
     TYPE: A
     SUB-DOMAIN: YOURDOMAIN.COM (NO WWW. OR DOT BEFORE NAME)
     DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
-	
-- Click on the link-button:  **+ ADD RECORD** 
 
-<h5>Second entry:</h5>
+<br>- Click on the link-button:  ** + ADD RECORD **
+
+<h5>Second Entry:</h5>
     TYPE: A
     SUB-DOMAIN: WWW.YOURDOMAIN.COM (NO WWW OR DOT BEFORE NAME)
     DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
 
-- Click on the link-button:  **+ ADD RECORD **
+<br>- Click on the link-button:  ** + ADD RECORD **
 
-<h5>Third entry:</h5>
+<h5>Third Entry:</h5>
     TYPE: A
     SUB-DOMAIN: NAME-OF-YOUR-DOKKU-APP.YOURDOMAIN.COM (NO WWW. OR DOT BEFORE NAME)
     DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
+
+<br>- Click ** SAVE ** to lock in your new settings.
+
 <br>
+For each additional Dokku app that you add to this server, you will want to return to this DNS ZONE to create a new A-RECORD for that sub-domain.
 
+For example, if you want to create a new Dokku app called 'SUPERDOOPER', you will need to create the following DNS entry:
 
-- Click SAVE to lock in your new settings.
+    TYPE: A
+    SUB-DOMAIN: SUPERDOOPER.YOURDOMAIN.COM
+    DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
 
+- Click ** SAVE ** to lock in your new settings.
 
 
 <br>
