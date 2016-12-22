@@ -13,7 +13,7 @@ TODO:  This article is still a work-in-progress...
 
 
 ##TABLE OF CONTENTS:
-  * [**PREREQUISITES:** What you need before you start](#step-1)
+  * [**PREREQUISITES:** What you need before you start](#prerequisites)
   * [**STEP #1:** Create a new AWS Ubuntu server instance](#step-1)
   * [**STEP #2:** xxxxxxxxxxxxxxxxxx](#step-2)
   * [**STEP #3:** xxxxxxxxxxxxxxxxxx](#step-3)
