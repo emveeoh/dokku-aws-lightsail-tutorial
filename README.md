@@ -5,18 +5,17 @@ A STEP-BY-STEP TUTORIAL:
 ![](./images/title-graphic1.jpeg) 
 
 
-TODO:  This article is still a work-in-progress...
-
+TODOS:  This article is still a work-in-progress...
 - add Let's Encrypt using dokku-letsencrypt HTTPS
 - add SWAP file on server with less than 1GIG RAM
 - add domains to Dokku manually
 
 
-
+<br>
 ##TABLE OF CONTENTS:
   * [**PREREQUISITES:** What you need before you start](#prerequisites)
   * [**STEP #1:** Create a new AWS Ubuntu server instance](#step-1)
-  * [**STEP #2:** xxxxxxxxxxxxxxxxxx](#step-2)
+  * [**STEP #2:** Connect to your new server and apply updates](#step-2)
   * [**STEP #3:** xxxxxxxxxxxxxxxxxx](#step-3)
   * [**STEP #4:** xxxxxxxxxxxxxxxxxx](#step-4)
   * [**STEP #5:** xxxxxxxxxxxxxxxxxx](#step-5)
@@ -27,13 +26,15 @@ TODO:  This article is still a work-in-progress...
   * [**STEP #10:** xxxxxxxxxxxxxxxxxx](#step-10)
   * [**STEP #11:** xxxxxxxxxxxxxxxxxx](#step-11)
 
-
+<br>
+<br>
 ##PREREQUISITES:
 - You will need your own registered domain name (i.e. mydomain.com) and will need administrative access to modify the DNS settings for it on your registrar's website.
 
 - You will need to sign-up for an AWS account and be able to  login to LightSail (www.amazonlightsail.com).
 
-
+<br>
+<br>
 ##STEP #1
 <h3>Create a new AWS Ubuntu server instance</h3>
 
@@ -53,43 +54,100 @@ In a few minutes, your new server instance will be ready.
 
 
 
----
+<br>
+<br>
 ##STEP #2
-<h3>XXXXXXXXXXXXXXXXXXXXXXX</h3>
-
-PART #xxxxx - CONNECT TO YOUR SERVER AND UPDATE IT
+<h3>Connect to your new server and apply updates</h3>
 
 Use the browser-based terminal window to connect to your server instance and update it.
 
+- Find your new server instance. You will see three vertical dots. Click them and select CONNECT from the list. A terminal emulator window should pop-up with a command prompt.
 
-xx. Find your new server instance. You will see three vertical dots. Click them and select CONNECT from the list. A terminal emulator window should pop-up with a command prompt.
+- At the command prompt($), type: sudo apt update  (hit enter).
 
-xx. At the command prompt($), type: sudo apt update  (hit enter).
+- Next, type: sudo apt upgrade  (hit enter).
 
-xx. Then, type: sudo apt upgrade  (hit enter).
+- You will be asked: Do you want to continue? [Y/n]. Type y (hit enter). This will install a bunch of updates for your Ubuntu Linux server. This could take about 5 minutes or so. Be patient.
 
-xx. You will be asked: Do you want to continue? [Y/n]. Type y (hit enter). This will install a bunch of updates for your Ubuntu Linux server. This could take about 5 minutes or so. Be patient.
-
-xx.Finally, type: sudo reboot  (hit enter). This will reboot the server and disconnect you from the terminal window. You can now close the terminal window. 
+- Finally, type: sudo reboot  (hit enter). This will reboot the server and disconnect you from the terminal window. You can now close the terminal window. 
 
 Your Ubuntu Linux server is now updated with the latest OS updates.
 
-
---------------------------------------------------------------------
-PART #2 - CREATE AND ASSIGN A STATIC IP 
-
+<br>
+<br>
+##STEP #3
+<h3>CREATE AND ASSIGN A STATIC IP </h3>
 First, setup a static IP address for your new server. By default, your new server instance will get a new IP address everytime it restarts. We don't want this. We want our IP address to stay the same forever.
---------------------------------------------------------------------
 
-xx. Click the CREATE OTHER RESOURCES button/menu and choose STATIC IP.
+- Click the CREATE OTHER RESOURCES button/menu and choose STATIC IP.
 
-xx. Go to ATTACH TO AN INSTANCE. Select the instance you just created from the SELECT AN INSTANCE menu. Mine is: Dokku1. Yours will be whatever you named your instance. 
+- Go to ATTACH TO AN INSTANCE. Select the instance you just created from the SELECT AN INSTANCE menu. Mine is: Dokku1. Yours will be whatever you named your instance. 
 
-xx. (optional) Under NAME YOUR STATIC IP, you can enter in a custom name. I used the default name.
+- (optional) Under NAME YOUR STATIC IP, you can enter in a custom name. I used the default name.
 
-xx. Click the CREATE button.
+- Click the CREATE button.
 
-xx. Important! Write down your new PUBLIC STATID IP ADDRESS. You will need it to complete the next few steps.
+
+<br>
+<br>
+##STEP #4
+<h3>ADD A NEW DNS ZONE</h3>
+Next, we want to create a new DNS ZONE for our domain name.
+
+- Click the CREATE OTHER RESOURCES button/menu again, choose DNS ZONE.
+
+- Create DNS Zone. Enter your domain name in the box under ENTER THE DOMAIN NAME YOU HAVE REGISTERED. You do not need the "WWW." before your domain name. For example: mydomainname.com.
+
+- Scroll down and click the CREATE DNS ZONE button.
+
+<br>
+<br>
+##STEP #5
+<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+
+
+<br>
+<br>
+##STEP #6
+<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+
+
+<br>
+<br>
+##STEP #7
+<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+
+
+<br>
+<br>
+##STEP #8
+<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+
+
+<br>
+<br>
+##STEP #9
+<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+
+
+<br>
+<br>
+##STEP #10
+<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+
+
+<br>
+<br>
+##STEP #11
+<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+
+
+
+
+
+
+
+
 
 
 
