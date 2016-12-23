@@ -40,7 +40,7 @@ TODOS:  This article is still a work-in-progress...
 
 
 
-- Login to your LightSail account. Click the **CREATE INSTANCE** button. Under 'Pick your instance image', click the ** BASE OS ** button. Then, choose ** UBUNTU **.
+- Login to your LightSail account. Click the **CREATE INSTANCE** button. Under 'Pick your instance image', click the **BASE OS** button. Then, choose **UBUNTU**.
 
 - Scroll down and you will see: "You are using the default SSH key pair for connecting to your instance." If you wish, you can create a new SSH key here, but it is not necessary. We will use the DEFAULT SSH KEY. 
 
@@ -48,7 +48,7 @@ TODOS:  This article is still a work-in-progress...
 
 - Scroll down and NAME YOUR INSTANCE. You can keep the default name, or give it any name you wish. I will name mine: Dokku1.
 
-- Finally, hit the ** CREATE ** button.
+- Finally, hit the **CREATE** button.
 
 In a few minutes, your new server instance will be ready.
 
@@ -61,7 +61,7 @@ In a few minutes, your new server instance will be ready.
 
 Use the browser-based terminal window to connect to your server instance and update it.
 
-- Find your new server instance. You will see three vertical dots. Click them and select ** CONNECT ** from the list. A terminal emulator window should pop-up with a command prompt.
+- Find your new server instance. You will see three vertical dots. Click them and select **CONNECT** from the list. A terminal emulator window should pop-up with a command prompt.
 
 - At the command prompt($), type: 
 
@@ -69,7 +69,7 @@ Use the browser-based terminal window to connect to your server instance and upd
 sudo apt update
 ~~~
 
-Hit ** enter. **
+Hit **enter.**
 
 - Next, type: 
 
@@ -77,14 +77,14 @@ Hit ** enter. **
 sudo apt upgrade
 ~~~
 
-Hit ** enter. **
+Hit **enter.**
 
 - You will be asked: ** Do you want to continue? [Y/n] **. Type:
 ~~~
 yes
 ~~~
 
-Hit ** enter. **
+Hit **enter.**
 
 This will install a bunch of updates for your Ubuntu Linux server. This could take about 5 minutes or so. Be patient.
 
@@ -94,7 +94,7 @@ This will install a bunch of updates for your Ubuntu Linux server. This could ta
 sudo reboot
 ~~~
 
-Hit ** enter. ** This will reboot the server and disconnect you from the terminal window. You can now close the terminal window. 
+Hit **enter.** This will reboot the server and disconnect you from the terminal window. You can now close the terminal window. 
 
 Your Ubuntu Linux server is now updated with the latest OS updates.
 
@@ -132,9 +132,9 @@ Next, we want to create a new DNS ZONE for our domain name.
 You should now be on the DETAILS page of your new DNS ZONE. Let's add some DNS Records to our new DNS ZONE.
 
 <br>
-** First DNS Entry: **
+**First DNS Entry:**
 
-- Click on the link-button:  ** + ADD RECORD **
+- Click on the link-button:  **+ ADD RECORD**
 
 ~~~
 TYPE: A
@@ -142,12 +142,12 @@ SUB-DOMAIN: YOURDOMAIN.COM (NO WWW. OR DOT BEFORE NAME)
 DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
 ~~~
     
-- Click ** SAVE ** to lock in your new settings.
+- Click **SAVE** to lock in your new settings.
 
 <br>
-** Second DNS Entry: **
+**Second DNS Entry:**
 
-- Click on the link-button:  ** + ADD RECORD **
+- Click on the link-button:  **+ ADD RECORD**
 
 ~~~
 TYPE: A
@@ -155,12 +155,12 @@ SUB-DOMAIN: WWW.YOURDOMAIN.COM (NO WWW OR DOT BEFORE NAME)
 DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
 ~~~
     
-- Click ** SAVE ** to lock in your new settings.
+- Click **SAVE** to lock in your new settings.
 
 <br>
-** Third DNS Entry: **
+**Third DNS Entry:**
 
-- Click on the link-button:  ** + ADD RECORD **
+- Click on the link-button:  **+ ADD RECORD**
 
 ~~~
 TYPE: A
@@ -168,13 +168,13 @@ SUB-DOMAIN: NAME-OF-YOUR-DOKKU-APP.YOURDOMAIN.COM (NO WWW. OR DOT BEFORE NAME)
 DESTINATION IP: (CHOOSE YOUR SERVER INSTANCE FROM THE MENU)
 ~~~
 
-- Click ** SAVE ** to lock in your new settings.
+- Click **SAVE** to lock in your new settings.
 
 <br>
-** Adding additional DNS entries for each new Dokku app: **
+**Adding additional DNS entries for each new Dokku app:**
 For each additional Dokku app that you add to your server, you will want to create a new A-RECORD for each new sub-domain.
 
-For example, if you want to create a new Dokku app called 'SUPERDOOPER', you will need to create the following DNS entry:
+For example, if you want to create a new Dokku app called **'SUPERDOOPER'**, you will need to create the following DNS entry:
 
     TYPE: A
     SUB-DOMAIN: SUPERDOOPER.YOURDOMAIN.COM
@@ -194,9 +194,9 @@ we need to open a port in the AWS firewall.
 
 - Click on the AMAZON LIGHTSAIL logo in the upper-right-hand corner. This will take you back to the main screen.
 
-- Find your new server instance. You will see three vertical dots. Click them and select ** MANAGE ** from the list.
+- Find your new server instance. You will see three vertical dots. Click them and select **MANAGE** from the list.
 
-- Click the ** NETWORKING** link. Scroll down to the FIREWALL settings. You should see the following settings:
+- Click the **NETWORKING** link. Scroll down to the FIREWALL settings. You should see the following settings:
 
 ~~~
 	APPLICATION			PROTOCOL		PORT RANGE
@@ -205,11 +205,11 @@ we need to open a port in the AWS firewall.
 	HTTP				TCP				80
 ~~~
 
-- Click the button/link: ** + ADD ANOTHER **
+- Click the button/link: **+ ADD ANOTHER**
 
-- Under APPLICATION, select ** HTTPS ** from the menu. The PROTOCOL and PORT RANGE fields are set for you automatically.
+- Under APPLICATION, select **HTTPS** from the menu. The PROTOCOL and PORT RANGE fields are set for you automatically.
 
-- Click ** SAVE ** to lock in the new settings.
+- Click **SAVE** to lock in the new settings.
 
 <br>
 <br>
