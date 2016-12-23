@@ -136,6 +136,10 @@ Next, we want to create a new DNS ZONE for our domain name.
 <h3>CONFIGURE THE DNS ZONE</h3>
 You should now be on the DETAILS page of your new DNS ZONE. Let's add some DNS Records to our new DNS ZONE.
 
+
+
+![](./images/dnsZone-ARecords.jpeg) 
+
 <br>
 **First DNS Entry:**
 
