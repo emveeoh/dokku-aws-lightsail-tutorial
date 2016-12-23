@@ -107,7 +107,7 @@ First, setup a static IP address for your new server. By default, your new serve
 
 - Click the CREATE OTHER RESOURCES button/menu and choose STATIC IP.
 
-![](/home/mvo/Repos/install-dokku-on-aws-lightsail-tutorial/images/createOther-staticIP.jpeg) 
+![](./images/createOther-staticIP.jpeg) 
 
 - Go to ATTACH TO AN INSTANCE. Select the instance you just created from the SELECT AN INSTANCE menu. Mine is: Dokku1. Yours will be whatever you named your instance. 
 
@@ -124,7 +124,7 @@ Next, we want to create a new DNS ZONE for our domain name.
 
 - Click the CREATE OTHER RESOURCES button/menu again, choose DNS ZONE.
 
-![](/home/mvo/Repos/install-dokku-on-aws-lightsail-tutorial/images/createOther-dnsZone.jpeg) 
+![](./images/createOther-dnsZone.jpeg) 
 
 - Create DNS Zone. Enter your domain name in the box under ENTER THE DOMAIN NAME YOU HAVE REGISTERED. You do not need the "WWW." before your domain name. For example: mydomainname.com.
 
