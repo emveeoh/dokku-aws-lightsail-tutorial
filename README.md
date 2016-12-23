@@ -1,5 +1,5 @@
 A STEP-BY-STEP TUTORIAL:
-<h1>SETUP DOKKU ON AMAZON AWS LIGHTSAIL</h1>
+<h1>INSTALL DOKKU ON AMAZON AWS LIGHTSAIL</h1>
 
 
 ![](./images/title-graphic1.jpeg) 
@@ -19,7 +19,7 @@ TODOS:  This article is still a work-in-progress...
   * [**STEP #3:** Create and assign a new static IP address](#step-3)
   * [**STEP #4:** Add a new DNS Zone](#step-4)
   * [**STEP #5:** Configure the DNS Zone](#step-5)
-  * [**STEP #6:** xxxxxxxxxxxxxxxxxx](#step-6)
+  * [**STEP #6:** Open the HTTPS port in the AWS Firewall](#step-6)
   * [**STEP #7:** xxxxxxxxxxxxxxxxxx](#step-7)
   * [**STEP #8:** xxxxxxxxxxxxxxxxxx](#step-8)
   * [**STEP #9:** xxxxxxxxxxxxxxxxxx](#step-9)
@@ -40,7 +40,7 @@ TODOS:  This article is still a work-in-progress...
 
 
 
-- Login to your LightSail account. Click the CREATE INSTANCE button. Under 'Pick your instance image', click the BASE OS button. Then, choose UBUNTU.
+- Login to your LightSail account. Click the ** CREATE INSTANCE ** button. Under 'Pick your instance image', click the ** BASE OS ** button. Then, choose ** UBUNTU **.
 
 - Scroll down and you will see: "You are using the default SSH key pair for connecting to your instance." If you wish, you can create a new SSH key here, but it is not necessary. We will use the DEFAULT SSH KEY. 
 
@@ -48,7 +48,7 @@ TODOS:  This article is still a work-in-progress...
 
 - Scroll down and NAME YOUR INSTANCE. You can keep the default name, or give it any name you wish. I will name mine: Dokku1.
 
-- Finally, hit the CREATE button.
+- Finally, hit the ** CREATE ** button.
 
 In a few minutes, your new server instance will be ready.
 
@@ -61,15 +61,40 @@ In a few minutes, your new server instance will be ready.
 
 Use the browser-based terminal window to connect to your server instance and update it.
 
-- Find your new server instance. You will see three vertical dots. Click them and select CONNECT from the list. A terminal emulator window should pop-up with a command prompt.
+- Find your new server instance. You will see three vertical dots. Click them and select ** CONNECT ** from the list. A terminal emulator window should pop-up with a command prompt.
 
-- At the command prompt($), type: sudo apt update  (hit enter).
+- At the command prompt($), type: 
 
-- Next, type: sudo apt upgrade  (hit enter).
+~~~
+sudo apt update
+~~~
 
-- You will be asked: Do you want to continue? [Y/n]. Type y (hit enter). This will install a bunch of updates for your Ubuntu Linux server. This could take about 5 minutes or so. Be patient.
+Hit ** enter. **
 
-- Finally, type: sudo reboot  (hit enter). This will reboot the server and disconnect you from the terminal window. You can now close the terminal window. 
+- Next, type: 
+
+~~~
+sudo apt upgrade
+~~~
+
+Hit ** enter. **
+
+- You will be asked: ** Do you want to continue? [Y/n] **. Type:
+~~~
+yes
+~~~
+
+Hit ** enter. **
+
+This will install a bunch of updates for your Ubuntu Linux server. This could take about 5 minutes or so. Be patient.
+
+- Finally, type: 
+
+~~~
+sudo reboot
+~~~
+
+Hit ** enter. ** This will reboot the server and disconnect you from the terminal window. You can now close the terminal window. 
 
 Your Ubuntu Linux server is now updated with the latest OS updates.
 
@@ -106,6 +131,7 @@ Next, we want to create a new DNS ZONE for our domain name.
 <h3>CONFIGURE THE DNS ZONE</h3>
 You should now be on the DETAILS page of your new DNS ZONE. Let's add some DNS Records to our new DNS ZONE.
 
+<br>
 ** First DNS Entry: **
 
 - Click on the link-button:  ** + ADD RECORD **
@@ -160,8 +186,30 @@ For example, if you want to create a new Dokku app called 'SUPERDOOPER', you wil
 <br>
 <br>
 ##STEP #6
-<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+<h3>OPEN HTTPS PORT IN THE AWS FIREWALL</h3>
 
+In order for web visitors to be able to visit your sites over HTTPS,
+we need to open a port in the AWS firewall.
+
+
+- Click on the AMAZON LIGHTSAIL logo in the upper-right-hand corner. This will take you back to the main screen.
+
+- Find your new server instance. You will see three vertical dots. Click them and select ** MANAGE ** from the list.
+
+- Click the ** NETWORKING** link. Scroll down to the FIREWALL settings. You should see the following settings:
+
+~~~
+	APPLICATION			PROTOCOL		PORT RANGE
+
+	SSH					TCP				22
+	HTTP				TCP				80
+~~~
+
+- Click the button/link: ** + ADD ANOTHER **
+
+- Under APPLICATION, select ** HTTPS ** from the menu. The PROTOCOL and PORT RANGE fields are set for you automatically.
+
+- Click ** SAVE ** to lock in the new settings.
 
 <br>
 <br>
@@ -198,7 +246,7 @@ For example, if you want to create a new Dokku app called 'SUPERDOOPER', you wil
 PART #xxxxx - ALLOW HTTPS THROUGH THE AWS FIREWALL
 
 In order for web visitors to be able to visit your sites over HTTPS,
-we need to open a port in the AWS firewall. It's easy, here's how...
+we need to open a port in the AWS firewall.
 --------------------------------------------------------------------
 
 xx. Click on the AMAZON LIGHTSAIL logo in the upper-right-hand corner. This will take you back to the main screen.
