@@ -13,6 +13,7 @@ TODOS:  This article is still a work-in-progress...
 
 <br>
 ##TABLE OF CONTENTS:
+
   * [**PREREQUISITES:** What you need before you start](#prerequisites)
   * [**STEP #1:** Create a new AWS Ubuntu server instance](#step-1)
   * [**STEP #2:** Connect to your new server and apply updates](#step-2)
