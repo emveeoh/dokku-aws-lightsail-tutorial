@@ -20,11 +20,16 @@ TODOS:  This article is still a work-in-progress...
   * [**STEP #4:** Add a new DNS Zone](#step-4)
   * [**STEP #5:** Configure the DNS Zone](#step-5)
   * [**STEP #6:** Open the HTTPS port in the AWS Firewall](#step-6)
-  * [**STEP #7:** xxxxxxxxxxxxxxxxxx](#step-7)
-  * [**STEP #8:** xxxxxxxxxxxxxxxxxx](#step-8)
-  * [**STEP #9:** xxxxxxxxxxxxxxxxxx](#step-9)
-  * [**STEP #10:** xxxxxxxxxxxxxxxxxx](#step-10)
+  * [**STEP #7:** Point your domain name to AWS](#step-7)
+  * [**STEP #8:** Install Dokku](#step-8)
+  * [**STEP #9:** Create your RSA private/public key pair](#step-9)
+  * [**STEP #10:** Add your public key to Dokku](#step-10)
   * [**STEP #11:** xxxxxxxxxxxxxxxxxx](#step-11)
+  * [**STEP #12:** xxxxxxxxxxxxxxxxxx](#step-12)
+  * [**STEP #13:** xxxxxxxxxxxxxxxxxx](#step-13)
+  * [**STEP #14:** xxxxxxxxxxxxxxxxxx](#step-14)
+  * [**STEP #15:** xxxxxxxxxxxxxxxxxx](#step-15)
+  * [**STEP #16:** xxxxxxxxxxxxxxxxxx](#step-16)
 
 <br>
 <br>
@@ -214,25 +219,83 @@ we need to open a port in the AWS firewall.
 <br>
 <br>
 ##STEP #7
-<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+<h3>POINT YOUR DOMAIN NAME TO AWS</h3>
+
+Now that we have created a static IP address and a DNS ZONE, we can configure the domain on your registrar's website to point to AWS.
+
+- In a new brower window, you will need to login to your registrar's website. The registrar is the company that you used when you registered the domain name. My domain name was registered on GoDaddy.com, but your registrar should have similar settings.
+
+- Once logged in, you will want to find the domain name that you want to point to AWS. Select it and look for settings similar to: MANAGE or MANAGE DNS SETTTINGS.
+
+- Look for NAMESERVERS or USE CUSTOM NAMESERVERS. We need to enter in some addresses that will point this domain's DNS to AWS. We will get theses addresses from the AWS/LightSail website.
+
+- Go back to the AWS/LightSail website. Click on the logo in the upper-right-hand corner so that you are on the main page. Sroll down to the DNS ZONE you created with your domain name. Click on the three vertical dots and choose MANAGE.
+
+- Scroll down to the bottom of the page until you see NAMESERVERS. These are the namesevers that you will need to enter into your registrar's CUSTOM NAMESERVERS entry box. Enter all four of them. Be sure to hit SAVE.
+
+Now, your domain name is pointed to AWS.
 
 
 <br>
 <br>
 ##STEP #8
-<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+<h3>INSTALL DOKKU</h3>
+
+- Click on the AMAZON LIGHTSAIL logo in the upper-right-hand corner. This will take you back to the main screen.
+
+- Use default SSH key. Download key to your local machine and store it in: ~/.ssh/
+
+- On LightSail, click on your new instance name. This will take you to MANAGE settings. 
+
+- Assign the new instance a Static IP.
+
+- Go to MANAGE
+
+- Connect to new instance using SSH. ($ ssh -i ~/.ssh/AWS/LightsailDefaultPrivateKey.pem ubuntu@emveeoh.com).
+
+- Run UPDATE and UPGRADE on Ubuntu to make the installation current. ($ sudo apt update && sudo apt upgrade).
+
+- Install DOKKU with curl script found at: http://dokku.viewdocs.io/dokku
+
+
 
 
 <br>
 <br>
 ##STEP #9
-<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+<h3>CREATE YOUR RSA PRIVATE/PUBLIC KEY PAIR FOR SSH CONNECTION TO DOKKU</h3>
+
+These step-by-step directions were sourced from a Digital Ocean tutorial:
+[Digital Ocean - RSA private/public key creation](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) 
+
+- On your local machine, run this terminal command: $ ssh-keygen -t rsa
+
+- Enter file in which to save the key (/home/mvo/.ssh/id_rsa). Give it a name. Example: dokku1-key
+
+- Pass phrase is optional. You will have to type this each time you connect. Leave it blank if you want faster login.
+
+- Two files were created for you. Both have the same name, but one will have the extension .pub. Grab these files and put them in: ~/.ssh/
+
+You now have the public/private key you need to SSH into your Dokku server.
 
 
 <br>
 <br>
 ##STEP #10
-<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+<h3>ADD THE PUBLIC KEY TO DOKKU</h3>
+
+- Get IP Address for new LightSail instance. Open this URL in browser. Should be a static IP.
+
+- You should see: Dokku Setup and it should already have the PUBLIC KEY text pasted into the Public Key box. Erase any text that might appear before the text "ssh-rsa". This is not part of the key. 
+
+- In the HOSTNAME box, enter in a domain name that you have registered.
+
+- Check the box "Use virtualhost naming for apps".
+
+- Click "Finish Setup". 
+
+Your Dokku instance is now ready to receive site/app uploads.
+
 
 
 <br>
@@ -242,108 +305,41 @@ we need to open a port in the AWS firewall.
 
 
 
---------------------------------------------------------------------
-PART #xxxxx - ALLOW HTTPS THROUGH THE AWS FIREWALL
 
-In order for web visitors to be able to visit your sites over HTTPS,
-we need to open a port in the AWS firewall.
---------------------------------------------------------------------
-
-xx. Click on the AMAZON LIGHTSAIL logo in the upper-right-hand corner. This will take you back to the main screen.
-
-xx. Find your new server instance. You will see three vertical dots. Click them and select MANAGE from the list.
-
-xx. Click the NETWORKING link. Scroll down to the FIREWALL settings. You should see the following settings:
-
-	APPLICATION		PROTOCOL	PORT RANGE
-	-------------	----------	------------
-	SSH				TCP			22
-	HTTP			TCP			80
-
-xx. Click the button/link: [ + ADD ANOTHER ].
-
-xx. Under APPLICATION, select "HTTPS" from the menu. PROTOCOL and PORT RANGE fields are set automatically.
-
-xx. Click SAVE to lock in your new settings.
+<br>
+<br>
+##STEP #12
+<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
 
 
 
 
---------------------------------------------------------------------
-PART #xxxxx - POINT YOUR DOMAIN NAME TO AWS
-
-Now that we have created a static IP address and a DNS ZONE, we can configure the domain on your registrar's website to point to AWS.
---------------------------------------------------------------------
-
-xx. In a new brower window, you will need to login to your registrar's website. The registrar is the company that you used when you registered the domain name. My domain name was registered on GoDaddy.com, but your registrar should have similar settings.
-
-xx. Once logged in, you will want to find the domain name that you want to point to AWS. Select it and look for settings similar to: MANAGE or MANAGE DNS SETTTINGS.
-
-xx. Look for NAMESERVERS or USE CUSTOM NAMESERVERS. We need to enter in some addresses that will point this domain's DNS to AWS. We will get theses addresses from the AWS/LightSail website.
-
-xx. Go back to the AWS/LightSail website. Click on the logo in the upper-right-hand corner so that you are on the main page. Sroll down to the DNS ZONE you created with your domain name. Click on the three vertical dots and choose MANAGE.
-
-xx. Scroll down to the bottom of the page until you see NAMESERVERS. These are the namesevers that you will need to enter into your registrar's CUSTOM NAMESERVERS entry box. Enter all four of them. Be sure to hit SAVE.
-
-Now, your domain name is pointed to AWS! Time to setup DOKKU!
+<br>
+<br>
+##STEP #13
+<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
 
 
 
 
-
- 
-
---------------------------------------------------------------------
-PART #xxxxx - INSTALL DOKKU
---------------------------------------------------------------------
-xx. Click on the AMAZON LIGHTSAIL logo in the upper-right-hand corner. This will take you back to the main screen.
-
-
-
-Use default SSH key. Download key to your local machine and store it in: ~/.ssh/
-
-
-2. On LightSail, click on your new instance name. This will take you to MANAGE settings. 
-
-
-
-2. Assign the new instance a Static IP.
-3. Go to MANAGE
-3. Connect to new instance using SSH. ($ ssh -i ~/.ssh/AWS/LightsailDefaultPrivateKey.pem ubuntu@emveeoh.com).
-4. Run UPDATE and UPGRADE on Ubuntu to make the installation current. ($ sudo apt update && sudo apt upgrade).
-5. Install DOKKU with curl script found at: http://dokku.viewdocs.io/dokku
-
-
-
---------------------------------------------------------------------
-PART #xxxxx - CREATE THE RSA PRIVATE/PUBLIC KEY PAIR FOR SSH CONNECTION TO DOKKU
---------------------------------------------------------------------
-Step-by-step directions:
-https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2
-
-6. On your local machine, run this terminal command: $ ssh-keygen -t rsa
-7. Enter file in which to save the key (/home/mvo/.ssh/id_rsa). Give it a name. Example: dokku1-key
-8. Pass phrase is optional. You will have to type this each time you connect. Leave it blank if you want faster login.
-9. Two files were created for you. Both have the same name, but one will have the extension .pub. Grab these files and put them in: ~/.ssh/
-
->> You now have the public/private key you need to SSH into your Dokku server.
-
-
-
---------------------------------------------------------------------
- PART #xxxxx - CONFIGURE DOKKU / ADD PUBLIC KEY:
---------------------------------------------------------------------
-6. Get IP Address for new LightSail instance. Open this URL in browser. Should be a static IP.
-7. You should see: Dokku Setup and it should already have the PUBLIC KEY text pasted into the Public Key box. Erase any text that might appear before the text "ssh-rsa". This is not part of the key. 
-8. In the HOSTNAME box, enter in a domain name that you have registered.
-9. Check the box "Use virtualhost naming for apps".
-10. Click "Finish Setup". 
-
->> Your Dokku instance is now ready to receive site/app uploads.
+<br>
+<br>
+##STEP #14
+<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
 
 
 
 
+<br>
+<br>
+##STEP #15
+<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
 
 
+
+
+<br>
+<br>
+##STEP #16
+<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
 
