@@ -68,28 +68,22 @@ Use the browser-based terminal window to connect to your server instance and upd
 
 - Find your new server instance. You will see three vertical dots. Click them and select **CONNECT** from the list. A terminal emulator window should pop-up with a command prompt.
 
-- At the command prompt($), type: 
+- In the command prompt, type: 
 
 ~~~
 sudo apt update
 ~~~
 
-Hit **enter.**
-
-- Next, type: 
+Then:
 
 ~~~
 sudo apt upgrade
 ~~~
 
-Hit **enter.**
-
-- You will be asked: ** Do you want to continue? [Y/n] **. Type:
+You will be asked: ** Do you want to continue? [Y/n] **. Type:
 ~~~
 yes
 ~~~
-
-Hit **enter.**
 
 This will install a bunch of updates for your Ubuntu Linux server. This could take about 5 minutes or so. Be patient.
 
@@ -99,7 +93,7 @@ This will install a bunch of updates for your Ubuntu Linux server. This could ta
 sudo reboot
 ~~~
 
-Hit **enter.** This will reboot the server and disconnect you from the terminal window. You can now close the terminal window. 
+This will reboot the server and disconnect you from the terminal window. You can now close the terminal window. 
 
 Your Ubuntu Linux server is now updated with the latest OS updates.
 
