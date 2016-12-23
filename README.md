@@ -40,7 +40,7 @@ TODOS:  This article is still a work-in-progress...
 
 
 
-- Login to your LightSail account. Click the ** CREATE INSTANCE ** button. Under 'Pick your instance image', click the ** BASE OS ** button. Then, choose ** UBUNTU **.
+- Login to your LightSail account. Click the **CREATE INSTANCE** button. Under 'Pick your instance image', click the ** BASE OS ** button. Then, choose ** UBUNTU **.
 
 - Scroll down and you will see: "You are using the default SSH key pair for connecting to your instance." If you wish, you can create a new SSH key here, but it is not necessary. We will use the DEFAULT SSH KEY. 
 
