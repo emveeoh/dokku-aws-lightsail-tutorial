@@ -47,11 +47,13 @@ TODOS:  This article is still a work-in-progress...
 
 - Login to your LightSail account. Click the **CREATE INSTANCE** button. Under 'Pick your instance image', click the **BASE OS** button. Then, choose **UBUNTU**.
 
+![](./images/createInstanceBtn1.jpeg) 
+
 - Scroll down and you will see: "You are using the default SSH key pair for connecting to your instance." If you wish, you can create a new SSH key here, but it is not necessary. We will use the DEFAULT SSH KEY. 
 
-- Scroll down and CHOOSE YOUR INSTANCE PLAN. Click on the $5/month instance plan to begin with. You can always up-size to a larger instance later as needed. 
+- Scroll down and CHOOSE YOUR INSTANCE PLAN. Click on the **$5/month** instance plan to begin with. We can always up-size to a larger instance later as needed. 
 
-- Scroll down and NAME YOUR INSTANCE. You can keep the default name, or give it any name you wish. I will name mine: Dokku1.
+- Scroll down and NAME YOUR INSTANCE. You can keep the default name, or give it any name you wish. I will name mine: **Dokku1**.
 
 - Finally, hit the **CREATE** button.
 
