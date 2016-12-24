@@ -10,6 +10,7 @@ TODOS:  This article is still a work-in-progress...
 - add SWAP file on server with less than 1GIG RAM
 - add domains to Dokku manually
 - robot.txt
+- check for spellling errors
 
 
 <br>
@@ -42,9 +43,9 @@ TODOS:  This article is still a work-in-progress...
 ##PREREQUISITES:
 1. You will need your own registered domain name (i.e. mydomain.com) and will need administrative access to modify the DNS settings for it on your registrar's website.
 
-2. You will need to sign-up for an AWS account and be able to  login to LightSail (www.amazonlightsail.com).
+2. You will need to sign-up for an AWS account and be able to login with full administration privileges to LightSail (www.amazonlightsail.com).
 
-3. If not already installed, you will need to have GIT on the pc that you will use to deploy your app. Installation instructions [here.](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+3. If not already installed, you will need to have GIT on the pc that you will use to deploy your app. Installation instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 
 [<h6>back to table of contents</h6>](#table-of-contents)
