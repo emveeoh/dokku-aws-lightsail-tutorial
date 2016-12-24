@@ -123,9 +123,9 @@ Your Ubuntu Linux server is now updated with the latest OS updates.
 ##STEP #3
 <h4>CREATE AND ASSIGN A STATIC IP </h4>
 
-By default, your new server instance will get a new dynamic IP address everytime it is rebooted. We don't want this. We want our IP address to remain static.
+By default, your new server instance will get a new (dynamic) IP address everytime your server is rebooted. We don't want this. We want a static IP address.
 
-- Click the CREATE OTHER RESOURCES button/menu and choose STATIC IP.
+- Click on the CREATE OTHER RESOURCES button and choose STATIC IP from the menu.
 
 ![](./images/createOther-staticIP.jpeg) 
 
