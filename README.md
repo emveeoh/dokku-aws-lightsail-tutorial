@@ -33,16 +33,19 @@ TODOS:  This article is still a work-in-progress...
 - [**STEP #16:** xxxxxxxxxxxxxxxxxx](#step-16)
 
 <br>
-<br>
 ##PREREQUISITES:
 1. You will need your own registered domain name (i.e. mydomain.com) and will need administrative access to modify the DNS settings for it on your registrar's website.
 
 2. You will need to sign-up for an AWS account and be able to  login to LightSail (www.amazonlightsail.com).
 
+
+| [(back to table of contents)](#table-of-contents) | 
+| ------:|
+
 <br>
 <br>
 ##STEP #1
-<h3>CREATE A NEW AWS UBUNTU SERVER INSTANCE</h3>
+<h4>CREATE A NEW AWS UBUNTU SERVER INSTANCE</h4>
 
 
 
@@ -61,11 +64,12 @@ TODOS:  This article is still a work-in-progress...
 In a few minutes, your new server instance will be ready.
 
 
-
+| [(back to table of contents)](#table-of-contents) |
+| ------:|
 <br>
 <br>
 ##STEP #2
-<h3>Connect to your new server and apply updates</h3>
+<h4>CONNECT TO YOUR NEW SERVER AND APPLY UPDATES</h4>
 
 Use the browser-based terminal window to connect to your server instance and update it.
 
@@ -100,10 +104,13 @@ This will reboot the server and disconnect you from the terminal window. You can
 
 Your Ubuntu Linux server is now updated with the latest OS updates.
 
+
+| [(back to table of contents)](#table-of-contents) |
+| ------:|
 <br>
 <br>
 ##STEP #3
-<h3>CREATE AND ASSIGN A STATIC IP </h3>
+<h4>CREATE AND ASSIGN A STATIC IP </h4>
 First, setup a static IP address for your new server. By default, your new server instance will get a new IP address everytime it restarts. We don't want this. We want our IP address to stay the same forever.
 
 - Click the CREATE OTHER RESOURCES button/menu and choose STATIC IP.
@@ -117,24 +124,29 @@ First, setup a static IP address for your new server. By default, your new serve
 - Click the CREATE button.
 
 
+| [(back to table of contents)](#table-of-contents) |
+| ------:|
 <br>
 <br>
 ##STEP #4
-<h3>ADD A NEW DNS ZONE</h3>
+<h4>ADD A NEW DNS ZONE</h4>
 Next, we want to create a new DNS ZONE for our domain name.
 
 - Click the CREATE OTHER RESOURCES button/menu again, choose DNS ZONE.
 
 ![](./images/createOther-dnsZone.jpeg) 
 
-- Create DNS Zone. Enter your domain name in the box under ENTER THE DOMAIN NAME YOU HAVE REGISTERED. You do not need the "WWW." before your domain name. For example: mydomainname.com.
+- Create DNS Zone. Enter your domain name in the box under ENTER THE DOMAIN NAME YOU HAVE REGISTERED. You do not need the "WWW." before your domain name. For example: mydomain.com.
 
 - Scroll down and click the CREATE DNS ZONE button.
 
+
+| [(back to table of contents)](#table-of-contents) |
+| ------:|
 <br>
 <br>
 ##STEP #5
-<h3>CONFIGURE THE DNS ZONE</h3>
+<h4>CONFIGURE THE DNS ZONE</h4>
 You should now be on the DETAILS page of your new DNS ZONE. Let's add some DNS Records to our new DNS ZONE.
 
 
@@ -181,10 +193,12 @@ For example, if you create a new Dokku app called: **'SUPERDOOPER'**, you will n
 - Click **SAVE**.
 
 
+| [(back to table of contents)](#table-of-contents) |
+| ------:|
 <br>
 <br>
 ##STEP #6
-<h3>OPEN HTTPS PORT IN THE AWS FIREWALL</h3>
+<h4>OPEN HTTPS PORT IN THE AWS FIREWALL</h4>
 
 In order for web visitors to be able to visit your sites over HTTPS,
 we need to open a port in the AWS firewall.
@@ -209,10 +223,13 @@ we need to open a port in the AWS firewall.
 
 - Click **SAVE** to lock in the new settings.
 
+
+| [(back to table of contents)](#table-of-contents) |
+| ------:|
 <br>
 <br>
 ##STEP #7
-<h3>POINT YOUR DOMAIN NAME TO AWS</h3>
+<h4>POINT YOUR DOMAIN NAME TO AWS</h4>
 
 Now that we have created a static IP address and a DNS ZONE, we can configure the domain on your registrar's website to point to AWS.
 
@@ -229,10 +246,12 @@ Now that we have created a static IP address and a DNS ZONE, we can configure th
 Now, your domain name is pointed to AWS.
 
 
+| [(back to table of contents)](#table-of-contents) |
+| ------:|
 <br>
 <br>
 ##STEP #8
-<h3>INSTALL DOKKU</h3>
+<h4>INSTALL DOKKU</h4>
 
 - Click on the AMAZON LIGHTSAIL logo in the upper-right-hand corner. This will take you back to the main screen.
 
@@ -251,12 +270,12 @@ Now, your domain name is pointed to AWS.
 - Install DOKKU with curl script found at: http://dokku.viewdocs.io/dokku
 
 
-
-
+| [(back to table of contents)](#table-of-contents) |
+| ------:|
 <br>
 <br>
 ##STEP #9
-<h3>CREATE YOUR RSA PRIVATE/PUBLIC KEY PAIR FOR SSH CONNECTION TO DOKKU</h3>
+<h4>CREATE YOUR RSA PRIVATE/PUBLIC KEY PAIR FOR SSH CONNECTION TO DOKKU</h4>
 
 These step-by-step directions were sourced from a Digital Ocean tutorial:
 [Digital Ocean - RSA private/public key creation](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) 
@@ -272,10 +291,12 @@ These step-by-step directions were sourced from a Digital Ocean tutorial:
 You now have the public/private key you need to SSH into your Dokku server.
 
 
+| [(back to table of contents)](#table-of-contents) |
+| ------:|
 <br>
 <br>
 ##STEP #10
-<h3>ADD THE PUBLIC KEY TO DOKKU</h3>
+<h4>ADD THE PUBLIC KEY TO DOKKU</h4>
 
 - Get IP Address for new LightSail instance. Open this URL in browser. Should be a static IP.
 
@@ -290,49 +311,50 @@ You now have the public/private key you need to SSH into your Dokku server.
 Your Dokku instance is now ready to receive site/app uploads.
 
 
-
+| [(back to table of contents)](#table-of-contents) |
+| ------:|
 <br>
 <br>
 ##STEP #11
-<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+<h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-
-
+| [(back to table of contents)](#table-of-contents) |
+| ------:|
 <br>
 <br>
 ##STEP #12
-<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+<h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-
-
+| [(back to table of contents)](#table-of-contents) |
+| ------:|
 <br>
 <br>
 ##STEP #13
-<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+<h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-
-
+| [(back to table of contents)](#table-of-contents) |
+| ------:|
 <br>
 <br>
 ##STEP #14
-<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+<h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-
-
+| [(back to table of contents)](#table-of-contents) |
+| ------:|
 <br>
 <br>
 ##STEP #15
-<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+<h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-
-
+| [(back to table of contents)](#table-of-contents) |
+| ------:|
 <br>
 <br>
 ##STEP #16
-<h3>xxxxxxxxxxxxxxxxxxxxxxx</h3>
+<h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
