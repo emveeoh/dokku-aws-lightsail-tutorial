@@ -144,13 +144,13 @@ By default, your new server instance will get a new (dynamic) IP address everyti
 <h4>ADD A NEW DNS ZONE</h4>
 Next, we want to create a new DNS ZONE for our domain name.
 
-- Click the CREATE OTHER RESOURCES button/menu again, choose DNS ZONE.
+- Click the CREATE OTHER RESOURCES button again, choose DNS ZONE from the menu.
 
 ![](./images/createOther-dnsZone.jpeg) 
 
-- Create DNS Zone. Enter your domain name in the box under ENTER THE DOMAIN NAME YOU HAVE REGISTERED. You do not need the "WWW." before your domain name. For example: mydomain.com.
+- Enter your domain name in the box under ENTER THE DOMAIN NAME YOU HAVE REGISTERED. You do not need the "WWW." before your domain name or any DOT. For example: **mydomain.com**.
 
-- Scroll down and click the CREATE DNS ZONE button.
+- Scroll down and click the **CREATE DNS ZONE** button.
 
 
 [<h6>back to table of contents</h6>](#table-of-contents)
