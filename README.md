@@ -82,6 +82,8 @@ In a few minutes, your new server instance will be ready.
 ##STEP #2
 <h4>CONNECT TO YOUR NEW SERVER AND UPDATE IT</h4>
 
+![](./images/dokku1-connect.jpeg) 
+
 - Find your new server instance under the Computing banner. On the right-hand side, you will see three vertical dots. Click them and select **CONNECT** from the list. A terminal emulator window should pop-up with a command prompt.
 
 - In the command prompt, type: 
