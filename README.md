@@ -18,7 +18,7 @@ TODOS:  This article is still a work-in-progress...
 
 - [**PREREQUISITES:** What you need before you start](#prerequisites)
 - [**STEP #1:** Create a new AWS Ubuntu server instance](#step-1)
-- [**STEP #2:** Connect to your new server and apply updates](#step-2)
+- [**STEP #2:** Connect to your new server and update it](#step-2)
 - [**STEP #3:** Create and assign a new static IP address](#step-3)
 - [**STEP #4:** Add a new DNS Zone](#step-4)
 - [**STEP #5:** Configure the DNS Zone](#step-5)
@@ -41,6 +41,7 @@ TODOS:  This article is still a work-in-progress...
 
 <br>
 ##PREREQUISITES:
+
 1. You will need your own registered domain name (i.e. mydomain.com) and will need administrative access to modify the DNS settings for it on your registrar's website.
 
 2. You will need to sign-up for an AWS account and be able to login with full administration privileges to LightSail (www.amazonlightsail.com).
@@ -57,15 +58,17 @@ TODOS:  This article is still a work-in-progress...
 
 
 
-- Login to your LightSail account. Click the **CREATE INSTANCE** button. Under 'Pick your instance image', click the **BASE OS** button. Then, choose **UBUNTU**.
+- Login to your LightSail account. Click the **CREATE INSTANCE** button. 
+
+- Under 'Pick your instance image', click the **BASE OS** button. Then, choose **UBUNTU**.
 
 ![](./images/createInstanceBtn1.jpeg) 
 
-- Scroll down and you will see: "You are using the default SSH key pair for connecting to your instance." If you wish, you can create a new SSH key here, but it is not necessary. We will use the DEFAULT SSH KEY. 
+- Scroll down and you will see: "You are using the default SSH key pair for connecting to your instance." We will use the **DEFAULT** SSH KEY. 
 
-- Scroll down and CHOOSE YOUR INSTANCE PLAN. Click on the **$5/month** instance plan to begin with. We can always up-size to a larger instance later as needed. 
+- Scroll down and CHOOSE YOUR INSTANCE PLAN. Click on the **$5/month** instance plan to begin with. You can always up-size to a larger instance later. 
 
-- Scroll down and NAME YOUR INSTANCE. You can keep the default name, or give it any name you wish. I will name mine: **Dokku1**.
+- Scroll down and NAME YOUR INSTANCE. You can keep the default name, or give it any name you wish. I will name mine: **DOKKU-1**.
 
 - Finally, hit the **CREATE** button.
 
@@ -77,11 +80,9 @@ In a few minutes, your new server instance will be ready.
 <br>
 <br>
 ##STEP #2
-<h4>CONNECT TO YOUR NEW SERVER AND APPLY UPDATES</h4>
+<h4>CONNECT TO YOUR NEW SERVER AND UPDATE IT</h4>
 
-Use the browser-based terminal window to connect to your server instance and update it.
-
-- Find your new server instance. You will see three vertical dots. Click them and select **CONNECT** from the list. A terminal emulator window should pop-up with a command prompt.
+- Find your new server instance under the Computing banner. On the right-hand side, you will see three vertical dots. Click them and select **CONNECT** from the list. A terminal emulator window should pop-up with a command prompt.
 
 - In the command prompt, type: 
 
