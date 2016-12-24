@@ -129,7 +129,7 @@ By default, your new server instance will get a new (dynamic) IP address everyti
 
 ![](./images/createOther-staticIP.jpeg) 
 
-- Scroll down to ATTACH TO AN INSTANCE. Select the instance you just created from the SELECT AN INSTANCE menu. Mine is: DOKKU-1. Yours will be whatever you named your instance. 
+- Scroll down to ATTACH TO AN INSTANCE. Select the instance you just created from the SELECT AN INSTANCE menu. Mine is: **DOKKU-1**. Yours will be whatever name you gave your instance. 
 
 - (optional) Under NAME YOUR STATIC IP, you can enter in a custom name. I used the default name.
 
