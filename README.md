@@ -23,6 +23,11 @@ TODOS:  This article is still a work-in-progress...
 - [**STEP #6:** Open the HTTPS port in the AWS Firewall](#step-6)
 - [**STEP #7:** Point your domain name to AWS](#step-7)
 - [**STEP #8:** Install Dokku](#step-8)
+- [**STEP #9:** Depoly your first Dokku app (static website)](#step-9)
+- [**STEP #10:** Depoly your second Dokku app (Node JS)](#step-10)
+- xxxxxxxxxxxxxxxxxxxxxxxxxx
+- xxxxxxxxxxxxxxxxxxxxxxxxxx
+- xxxxxxxxxxxxxxxxxxxxxxxxxx
 - [**STEP #9:** Create your RSA private/public key pair](#step-9)
 - [**STEP #10:** Add your public key to Dokku](#step-10)
 - [**STEP #11:** xxxxxxxxxxxxxxxxxx](#step-11)
@@ -37,6 +42,8 @@ TODOS:  This article is still a work-in-progress...
 1. You will need your own registered domain name (i.e. mydomain.com) and will need administrative access to modify the DNS settings for it on your registrar's website.
 
 2. You will need to sign-up for an AWS account and be able to  login to LightSail (www.amazonlightsail.com).
+
+3. If not already installed, you will need to have GIT on the pc that you will use to deploy your app. Installation instructions [here.](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 
 [<h6>back to table of contents</h6>](#table-of-contents)
