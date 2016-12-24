@@ -63,8 +63,7 @@ TODOS:  This article is still a work-in-progress...
 In a few minutes, your new server instance will be ready.
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
@@ -105,8 +104,7 @@ This will reboot the server and disconnect you from the terminal window. You can
 Your Ubuntu Linux server is now updated with the latest OS updates.
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
@@ -125,8 +123,7 @@ First, setup a static IP address for your new server. By default, your new serve
 - Click the CREATE button.
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
@@ -143,8 +140,7 @@ Next, we want to create a new DNS ZONE for our domain name.
 - Scroll down and click the CREATE DNS ZONE button.
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
@@ -196,8 +192,7 @@ For example, if you create a new Dokku app called: **'SUPERDOOPER'**, you will n
 - Click **SAVE**.
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
@@ -228,8 +223,7 @@ we need to open a port in the AWS firewall.
 - Click **SAVE** to lock in the new settings.
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
@@ -251,8 +245,7 @@ Now that we have created a static IP address and a DNS ZONE, we can configure th
 Now, your domain name is pointed to AWS.
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
@@ -276,8 +269,7 @@ Now, your domain name is pointed to AWS.
 - Install DOKKU with curl script found at: http://dokku.viewdocs.io/dokku
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
@@ -298,8 +290,7 @@ These step-by-step directions were sourced from a Digital Ocean tutorial:
 You now have the public/private key you need to SSH into your Dokku server.
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
@@ -319,8 +310,7 @@ You now have the public/private key you need to SSH into your Dokku server.
 Your Dokku instance is now ready to receive site/app uploads.
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
@@ -328,8 +318,7 @@ Your Dokku instance is now ready to receive site/app uploads.
 <h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
@@ -337,8 +326,7 @@ Your Dokku instance is now ready to receive site/app uploads.
 <h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
@@ -346,8 +334,7 @@ Your Dokku instance is now ready to receive site/app uploads.
 <h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
@@ -355,8 +342,7 @@ Your Dokku instance is now ready to receive site/app uploads.
 <h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
@@ -364,8 +350,7 @@ Your Dokku instance is now ready to receive site/app uploads.
 <h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
@@ -373,9 +358,7 @@ Your Dokku instance is now ready to receive site/app uploads.
 <h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
