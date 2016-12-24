@@ -13,7 +13,7 @@ TODOS:  This article is still a work-in-progress...
 
 <br>
 ##TABLE OF CONTENTS:
-
+>
 - [**PREREQUISITES:** What you need before you start](#prerequisites)
 - [**STEP #1:** Create a new AWS Ubuntu server instance](#step-1)
 - [**STEP #2:** Connect to your new server and apply updates](#step-2)
@@ -39,7 +39,7 @@ TODOS:  This article is still a work-in-progress...
 2. You will need to sign-up for an AWS account and be able to  login to LightSail (www.amazonlightsail.com).
 
 
-| [(back to table of contents)](#table-of-contents) | 
+| [back to table of contents](#table-of-contents) | 
 | ------:|
 
 <br>
@@ -64,7 +64,7 @@ TODOS:  This article is still a work-in-progress...
 In a few minutes, your new server instance will be ready.
 
 
-| [(back to table of contents)](#table-of-contents) |
+| [back to table of contents](#table-of-contents) |
 | ------:|
 <br>
 <br>
@@ -105,7 +105,7 @@ This will reboot the server and disconnect you from the terminal window. You can
 Your Ubuntu Linux server is now updated with the latest OS updates.
 
 
-| [(back to table of contents)](#table-of-contents) |
+| [back to table of contents](#table-of-contents) |
 | ------:|
 <br>
 <br>
@@ -124,7 +124,7 @@ First, setup a static IP address for your new server. By default, your new serve
 - Click the CREATE button.
 
 
-| [(back to table of contents)](#table-of-contents) |
+| [back to table of contents](#table-of-contents) |
 | ------:|
 <br>
 <br>
@@ -141,7 +141,7 @@ Next, we want to create a new DNS ZONE for our domain name.
 - Scroll down and click the CREATE DNS ZONE button.
 
 
-| [(back to table of contents)](#table-of-contents) |
+| [back to table of contents](#table-of-contents) |
 | ------:|
 <br>
 <br>
@@ -193,7 +193,7 @@ For example, if you create a new Dokku app called: **'SUPERDOOPER'**, you will n
 - Click **SAVE**.
 
 
-| [(back to table of contents)](#table-of-contents) |
+| [back to table of contents](#table-of-contents) |
 | ------:|
 <br>
 <br>
@@ -224,7 +224,7 @@ we need to open a port in the AWS firewall.
 - Click **SAVE** to lock in the new settings.
 
 
-| [(back to table of contents)](#table-of-contents) |
+| [back to table of contents](#table-of-contents) |
 | ------:|
 <br>
 <br>
@@ -246,7 +246,7 @@ Now that we have created a static IP address and a DNS ZONE, we can configure th
 Now, your domain name is pointed to AWS.
 
 
-| [(back to table of contents)](#table-of-contents) |
+| [back to table of contents](#table-of-contents) |
 | ------:|
 <br>
 <br>
@@ -270,7 +270,7 @@ Now, your domain name is pointed to AWS.
 - Install DOKKU with curl script found at: http://dokku.viewdocs.io/dokku
 
 
-| [(back to table of contents)](#table-of-contents) |
+| [back to table of contents](#table-of-contents) |
 | ------:|
 <br>
 <br>
@@ -291,7 +291,7 @@ These step-by-step directions were sourced from a Digital Ocean tutorial:
 You now have the public/private key you need to SSH into your Dokku server.
 
 
-| [(back to table of contents)](#table-of-contents) |
+| [back to table of contents](#table-of-contents) |
 | ------:|
 <br>
 <br>
@@ -311,7 +311,7 @@ You now have the public/private key you need to SSH into your Dokku server.
 Your Dokku instance is now ready to receive site/app uploads.
 
 
-| [(back to table of contents)](#table-of-contents) |
+| [back to table of contents](#table-of-contents) |
 | ------:|
 <br>
 <br>
@@ -319,7 +319,7 @@ Your Dokku instance is now ready to receive site/app uploads.
 <h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-| [(back to table of contents)](#table-of-contents) |
+| [back to table of contents](#table-of-contents) |
 | ------:|
 <br>
 <br>
@@ -327,7 +327,7 @@ Your Dokku instance is now ready to receive site/app uploads.
 <h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-| [(back to table of contents)](#table-of-contents) |
+| [back to table of contents](#table-of-contents) |
 | ------:|
 <br>
 <br>
@@ -335,7 +335,7 @@ Your Dokku instance is now ready to receive site/app uploads.
 <h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-| [(back to table of contents)](#table-of-contents) |
+| [back to table of contents](#table-of-contents) |
 | ------:|
 <br>
 <br>
@@ -343,7 +343,7 @@ Your Dokku instance is now ready to receive site/app uploads.
 <h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-| [(back to table of contents)](#table-of-contents) |
+| [back to table of contents](#table-of-contents) |
 | ------:|
 <br>
 <br>
@@ -351,7 +351,7 @@ Your Dokku instance is now ready to receive site/app uploads.
 <h4>xxxxxxxxxxxxxxxxxxxxxxx</h4>
 
 
-| [(back to table of contents)](#table-of-contents) |
+| [back to table of contents](#table-of-contents) |
 | ------:|
 <br>
 <br>
