@@ -133,7 +133,7 @@ By default, your new server instance will get a new (dynamic) IP address everyti
 
 - (optional) Under NAME YOUR STATIC IP, you can enter in a custom name. I used the default name.
 
-- Click the CREATE button.
+- Click the **CREATE** button.
 
 
 [<h6>back to table of contents</h6>](#table-of-contents)
