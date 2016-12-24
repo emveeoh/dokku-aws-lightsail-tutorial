@@ -39,8 +39,7 @@ TODOS:  This article is still a work-in-progress...
 2. You will need to sign-up for an AWS account and be able to  login to LightSail (www.amazonlightsail.com).
 
 
-| [<h6>back to table of contents</h6>](#table-of-contents) | 
-| ------:|
+[<h6>back to table of contents</h6>](#table-of-contents)
 
 <br>
 <br>
