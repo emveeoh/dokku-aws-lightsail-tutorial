@@ -9,6 +9,7 @@ TODOS:  This article is still a work-in-progress...
 - add Let's Encrypt using dokku-letsencrypt HTTPS
 - add SWAP file on server with less than 1GIG RAM
 - add domains to Dokku manually
+- robot.txt
 
 
 <br>
