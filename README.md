@@ -98,7 +98,7 @@ Then:
 sudo apt upgrade
 ~~~
 
-You will be asked: ** Do you want to continue? [Y/n] **. Type:
+You will be asked: **Do you want to continue? [Y/n]**. Type:
 ~~~
 yes
 ~~~
