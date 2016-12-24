@@ -103,7 +103,7 @@ You will be asked: **Do you want to continue? [Y/n]**. Type:
 yes
 ~~~
 
-This will install a bunch of updates for your Ubuntu Linux server. This could take about 5 minutes or so. Be patient.
+This will install updates for your Ubuntu Linux server. This could take about 5 minutes or so. Be patient.
 
 - Finally, type: 
 
